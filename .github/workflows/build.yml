@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - master 
 
 jobs:
   docker:
@@ -27,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: razannadhif/syseng/
+          tags: docker push razannadhif/syseng/
